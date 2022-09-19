@@ -17,7 +17,7 @@ import numpy as np
 import numpy.linalg as linalg
 from matplotlib import pyplot as plt
 
-#class with all major/generl functions
+#class with all major/general functions
 
 class GP():
     def mean_f(X):
@@ -64,9 +64,6 @@ class GP():
                         i + 1, training_iter, loss.item(),
                         model.likelihood.noise.item()
                     ), end = '   ')
-                #print('Lengthscales:', end = ' ')
-                #for n in range(dim_num):
-                #    print('%.3f' % model.covar_module.base_kernel.lengthscale.squeeze()[n], end= ' ')
             optimizer.step()
         model.eval()
         likelihood.eval()
