@@ -253,3 +253,5 @@ for i in range(N):
 
 Y = torch.tensor([0.6,0.6])
 GP.minimiseActive(F,J,Z,train_x,train_y,2,0.3,0.9)
+
+#These minimsations give a lot of warnings but they still work fine and they go away for the 3D version of this code
