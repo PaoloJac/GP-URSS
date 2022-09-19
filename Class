@@ -1,3 +1,4 @@
+#Preamble
 import ase
 from ase import Atoms
 from ase.calculators.emt import EMT
@@ -15,6 +16,8 @@ import math
 import numpy as np
 import numpy.linalg as linalg
 from matplotlib import pyplot as plt
+
+#class with all major/generl functions
 
 class GP():
     def mean_f(X):
