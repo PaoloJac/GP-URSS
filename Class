@@ -216,6 +216,7 @@ class GP():
             train_y = train_y.to(dtype=torch.float32)
             model.set_train_data(train_x,train_y,strict=False)
             
+    #This function does a spectral decom of the hessian before each step. I haven't tested this fully so there may be some bugs
     def minimiseSpecActive(F,J,X,train_x,train_y,dim_num,c1,rho,J_min=1e-6,N=100):
         I = np.identity(57)
         for i in range(N):
